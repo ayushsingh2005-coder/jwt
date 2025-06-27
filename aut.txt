@@ -1,0 +1,32 @@
+📝authentication and authorization
+
+vaildating or verification of the user  - authentication 
+
+permission to perform certain admin related task - authorization 
+
+when you request something(profile page) from the server through browser(client) ,the
+server always validates you before serving the request and giving the responses.
+
+server authenticate everytime when a request is made through browser.
+
+authentication/request --> server does everytime . 
+
+What actually happens here is :
+when browser made a request to the server ,server responses with creation of encrypted string of mixed characters that served with response by the server to the browser(client) and this string got saved in the browser so that the next time when client made the request ,this string will get attached with the response , so that the server doesn't need to authenticate user everytime .
+
+here comes the CONCEPT OF
+
+COOKIES AND SESSION 
+
+concepts that we need to learn :
+
+-- how to set cookies and read cookies 
+refer to filename : cookies.js
+
+-- how to use bcrypt for password encryption and decryption.
+refer to filename : encrypt.js and decrypt.js
+
+
+-- JWT and how to store and extract data
+
+put all the code of each file in the file app.js and then use npx nodemon to see the result.
